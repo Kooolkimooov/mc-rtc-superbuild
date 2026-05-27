@@ -27,6 +27,7 @@ set(APT_DEPENDENCIES
     # python-is-python3
     libnotify-dev
     # python3-git
+    pipx
 )
 if(BUILD_BENCHMARKS)
   list(APPEND APT_DEPENDENCIES libbenchmark-dev)
@@ -39,7 +40,7 @@ function(mc_rtc_extra_steps)
   if(PYTHON_BINDING_BUILD_PYTHON2_AND_PYTHON3 OR PYTHON_BINDING_FORCE_PYTHON2)
     message(
       FATAL_ERROR
-      "Python 2 is not supported on Resolute, disable PYTHON_BINDING or enable Python 3 binding only"
+        "Python 2 is not supported on Resolute, disable PYTHON_BINDING or enable Python 3 binding only"
     )
   endif()
 endfunction()

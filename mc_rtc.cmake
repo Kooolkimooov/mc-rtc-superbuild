@@ -40,7 +40,7 @@ AddProject(
 if(PYTHON_BINDING)
   AddProject(
     Eigen3ToPython
-    GITHUB jrl-umi3218/Eigen3ToPython
+    GITHUB Kooolkimooov/Eigen3ToPython
     GIT_TAG origin/master
     CMAKE_ARGS -DPIP_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX}
     APT_PACKAGES python-eigen python3-eigen
@@ -235,7 +235,7 @@ AddProject(
 if(WITH_ROS_SUPPORT)
   AddCatkinProject(
     mc_rtc_ros
-    GITHUB jrl-umi3218/mc_rtc_ros
+    GITHUB Kooolkimooov/mc_rtc_ros
     GIT_TAG origin/master
     WORKSPACE mc_rtc_ws
     DEPENDS mc_rtc
