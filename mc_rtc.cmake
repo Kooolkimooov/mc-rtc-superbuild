@@ -236,7 +236,7 @@ if(WITH_ROS_SUPPORT)
   AddCatkinProject(
     mc_rtc_ros
     GITHUB Kooolkimooov/mc_rtc_ros
-    GIT_TAG origin/master
+    GIT_TAG origin/dev
     WORKSPACE mc_rtc_ws
     DEPENDS mc_rtc
     APT_PACKAGES ros-${ROS_DISTRO}-mc-rtc-plugin ros-${ROS_DISTRO}-mc-rtc-tools
